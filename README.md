@@ -1,6 +1,6 @@
 # Physics 427 Homework 0
 
-## Setting Up C++ and Compile a Simple Program
+## 1. Setting Up C++ and Compile a Simple Program
 
 First let us set up a C++ compiler on your computer. We will be using the GNU
 Compiler Collection (GCC), which includes a C++ compiler called `g++`.
@@ -62,7 +62,7 @@ g++ --version
 ```
 If the command prints something like `g++ (GCC) 12.2.1` or some other versions, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
 
-Write the following snippet into a text file and save it as \verb|hello_world.cpp|:
+Write the following snippet into a text file and save it as `hello_world.cpp`:
 
 ``` c++
 #include <iostream>
@@ -80,8 +80,18 @@ g++ hello_world.cpp && ./a.out
 The default output of `g++` is an executable binary file called
 `a.out`, and we call that executable using `./a.out`.
 
-## Setup Git
+## 2. Setup Git
 
-Homework submission in this course will be done through GitHub
+Homework submission in this course will be done through GitHub. You'll need to
+make sure `git` is installed on your system. Use the package installation method
+in Problem #1 to install it. 
+
+The next step is to _fork_ this repository. This will create a mirror of the
+homework repository under your own GitHub account. You can then _clone_ this
+repository using the following command:
+``` sh
+git clone https://github.com/your-user-name/Physics-427-homework-0.git
+```
+
 
 ## Setup a Code Editor
