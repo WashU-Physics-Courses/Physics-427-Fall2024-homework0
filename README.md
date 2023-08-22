@@ -61,19 +61,17 @@ Homework submission in this course will be done through GitHub. You'll need to
 make sure `git` is installed on your system, which was done in the previous
 problem.
 
-The next step is to _fork_ this repository by clicking on the "Fork" button on
-the GitHub page of this assignment. This will create a mirror of the homework
-repository under your own GitHub account. You can then _clone_ this repository
-using the following command:
+You can "clone" this repository onto your own computer, and add your content to
+it. This will be your version of the homework and will be how it is submitted too. 
 
 ``` sh
-git clone https://github.com/your-user-name/Physics-427-homework-0.git
+git clone Link-to-your-homework-repository
 ```
 
-You will now have a directory called `Physics-427-homework-0` on your computer.
-It will only contain one file, `README.md`, which contains the instructions you
-are reading now. In the following sections we will be creating more files, which
-will be included in the submission.
+You will now have a directory starting with `Physics-427-homework-0` on your
+computer. It will only contain one file, `README.md`, which has the instructions
+you are reading now. In the following sections we will be creating more files,
+which will be included in the submission.
 
 ## 2. Setting Up C++ and Compile a Simple Program
 
@@ -89,7 +87,10 @@ following command in your terminal (in the case of Windows, enter WSL first):
 ``` sh
 g++ --version
 ```
-If the command prints something like `g++ (GCC) 12.2.1` or some other versions, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
+
+If the command prints something like `g++ (GCC) 12.2.1` or some other versions,
+then you are ready to go. If not, go back to previous steps and figure out what
+you did wrong.
 
 Write the following snippet into a text file and save it as `hello_world.cpp`:
 
@@ -142,6 +143,7 @@ git push origin main
 
 This will upload all your commits to GitHub, under the repository that you
 forked in Problem #1. You should now be able to see this new file on the
-repository webpage (of your fork, not the original assignment webpage).
-
-## 3. 
+repository webpage (of your fork, not the original assignment webpage). You can
+upload to the repository as many times as you want up until the deadline cutoff
+time. The system will freeze the repository automatically at the deadline, and
+you will not be able to update it afterwards. 
