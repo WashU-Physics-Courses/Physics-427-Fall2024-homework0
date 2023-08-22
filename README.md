@@ -3,7 +3,7 @@
 ## Setting Up C++ and Compile a Simple Program
 
 First let us set up a C++ compiler on your computer. We will be using the GNU
-Compiler Collection (GCC), which includes a C++ compiler called `g++``.
+Compiler Collection (GCC), which includes a C++ compiler called `g++`.
 Follow the instructions depending on your operating system:
 
 ### Windows
@@ -37,7 +37,7 @@ sudo apt-get install gcc
 ### Mac OS
 
 You can install GCC using `homebrew`. First, install `homebrew`
-following the instructions on its [official websit](https://brew.sh/).
+following the instructions on its [official website](https://brew.sh/).
 `homebrew` can install packages that are often used in the Linux community
 but not typically included in Mac OS.
 
@@ -53,6 +53,14 @@ If you use Linux, I expect that you know how to manage software packages on your
 computer. Make sure you install GCC using your package manager.
 
 ### Compiling a Hello World Program
+
+First, check that you have installed the compiler correctly by running the
+following command in your terminal (in the case of Windows, enter WSL first):
+
+``` sh
+g++ --version
+```
+If the command prints something like `g++ (GCC) 12.2.1` or some other versions, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
 
 Write the following snippet into a text file and save it as \verb|hello_world.cpp|:
 
