@@ -100,6 +100,8 @@ g++ hello_world.cpp && ./a.out
 The default output of `g++` is an executable binary file called
 `a.out`, and we call that executable using `./a.out`.
 
+### Commit to git
+
 In order to include this file into the homework submission, run the following command:
 
 ``` sh
@@ -120,5 +122,17 @@ own hash number, and you will have the ability to look at individual commits or
 revert to an older commit. The part after `-m` is called the commit message,
 which goes into the commit log to indicate what you did for this particular
 commit.
+
+Now `git` knows about the change (of adding the file `hello_world.cpp`) on your
+machine. In order to upload this commit to the internet, we need to "push" to a
+remote server, which is GitHub in this case. We need to run:
+
+``` sh
+git push origin main
+```
+
+This will upload all your commits to GitHub, under the repository that you
+forked in Problem #1. You should now be able to see this new file on the
+repository webpage (of your fork, not the original assignment webpage).
 
 ## 3. 
