@@ -1,5 +1,12 @@
 # Physics 427 Homework 0
 
+__Due 9:00am Friday 9/1/2023__
+
+This homework is not graded and is designed to help you set up your computer
+environment and understand the homework submission process. It has an unusual
+deadline of Friday 9/1 since you will need to go through this set up process
+before the first real homework is due.
+
 ## 0. Setting Up a Developing Environment
 
 We want to set up a Linux development environment on your computer. This will be
