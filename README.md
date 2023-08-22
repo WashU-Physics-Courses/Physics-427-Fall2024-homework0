@@ -15,12 +15,13 @@ part of a software ecosystem. The instructions will depend on your operating sys
 
 ### Windows
 
-We will install the Windows Subsystem for Linux (WSL), which lets you install a
-Linux distribution such as Ubuntu on your system, allowing you to run Linux
-applications and commandline utilities directly on Windows. If you use Windows
-10 version 2004 and higher, or Windows 11, you can directly install WSL with a
-single command. Open PowerShell or Windows Command Prompt in administrator mode by
-right-clicking and selecting __Run as administrator__, enter:
+We will need to install the Windows Subsystem for Linux (WSL), which lets you
+have a Linux distribution such as Ubuntu on your system, allowing you to run
+Linux applications and command line utilities directly on Windows. If you use
+Windows 10 version 2004 and higher, or Windows 11, you can directly install WSL
+with a single command. Open PowerShell or Windows Command Prompt in
+administrator mode by right-clicking and selecting __Run as administrator__,
+enter:
 
 ``` powershell
 wsl --install
@@ -44,13 +45,16 @@ apt-get install git
 
 ### Mac OS
 
-You can install GCC using `homebrew`. First, install `homebrew`
-following the instructions on its [official website](https://brew.sh/).
-`homebrew` can install packages that are often used in the Linux community
-but not typically included in Mac OS.
+You can install GCC using `homebrew`. First, install `homebrew` using the following command:
 
-To install a software package, use `brew install`. For example, we will use
-`git` throughout this course. Install `git` using the following command:
+``` sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+`homebrew` can install packages that are often used in the Linux community but
+not typically included in Mac OS. To install a software package, use `brew
+install`. For example, we will use `git` throughout this course. Install `git`
+using the following command:
 
 ``` sh
 brew install git
