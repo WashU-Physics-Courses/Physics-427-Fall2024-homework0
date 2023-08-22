@@ -1,30 +1,10 @@
 # Physics 427 Homework 0
 
-## 1. Setup Git
+## 0. Setting Up a Developing Environment
 
-Homework submission in this course will be done through GitHub. You'll need to
-make sure `git` is installed on your system. Use the package installation method
-in Problem #1 to install it. 
-
-The next step is to _fork_ this repository by clicking on the "Fork" button on
-the GitHub page of this assignment. This will create a mirror of the homework
-repository under your own GitHub account. You can then _clone_ this repository
-using the following command:
-
-``` sh
-git clone https://github.com/your-user-name/Physics-427-homework-0.git
-```
-
-You will now have a directory called `Physics-427-homework-0` on your computer.
-It will only contain one file, `README.md`, which contains the instructions you
-are reading now. In the following sections we will be creating more files, which
-will be included in the submission.
-
-## 2. Setting Up C++ and Compile a Simple Program
-
-Now let us set up a C++ compiler on your computer. We will be using the GNU
-Compiler Collection (GCC), which includes a C++ compiler called `g++`.
-Follow the instructions depending on your operating system:
+We want to set up a Linux development environment on your computer. This will be
+important since most of the tools we use live in the command line, and they are
+part of a software ecosystem. The instructions will depend on your operating system:
 
 ### Windows
 
@@ -48,10 +28,11 @@ official
 and password, updating packages, and setting up Windows Terminal. You
 _don't_ need to add additional distributions.
 
-Once you have WSL, enter the Linux command line and install `gcc` using:
+To install a software package, use `apt-get install`. For example, we will use
+`git` throughout this course. Install `git` using the following command:
 
 ``` sh
-sudo apt-get install gcc
+apt-get install git
 ```
 
 ### Mac OS
@@ -61,16 +42,44 @@ following the instructions on its [official website](https://brew.sh/).
 `homebrew` can install packages that are often used in the Linux community
 but not typically included in Mac OS.
 
-You can now run the following command to install GCC:
+To install a software package, use `brew install`. For example, we will use
+`git` throughout this course. Install `git` using the following command:
 
 ``` sh
-brew install gcc
+brew install git
 ```
 
 ### Linux
 
 If you use Linux, I expect that you know how to manage software packages on your
-computer. Make sure you install GCC using your package manager.
+computer. Make sure you install GCC using your package manager. If you use
+Ubuntu, then the instruction is the same as WSL outlined above.
+
+## 1. Setup Git
+
+Homework submission in this course will be done through GitHub. You'll need to
+make sure `git` is installed on your system, which was done in the previous
+problem.
+
+The next step is to _fork_ this repository by clicking on the "Fork" button on
+the GitHub page of this assignment. This will create a mirror of the homework
+repository under your own GitHub account. You can then _clone_ this repository
+using the following command:
+
+``` sh
+git clone https://github.com/your-user-name/Physics-427-homework-0.git
+```
+
+You will now have a directory called `Physics-427-homework-0` on your computer.
+It will only contain one file, `README.md`, which contains the instructions you
+are reading now. In the following sections we will be creating more files, which
+will be included in the submission.
+
+## 2. Setting Up C++ and Compile a Simple Program
+
+Now let us set up a C++ compiler on your computer. We will be using the GNU
+Compiler Collection (GCC), which includes a C++ compiler called `g++`.
+Follow the instructions depending on your operating system:
 
 ### Compiling a Hello World Program
 
