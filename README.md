@@ -1,8 +1,28 @@
 # Physics 427 Homework 0
 
-## 1. Setting Up C++ and Compile a Simple Program
+## 1. Setup Git
 
-First let us set up a C++ compiler on your computer. We will be using the GNU
+Homework submission in this course will be done through GitHub. You'll need to
+make sure `git` is installed on your system. Use the package installation method
+in Problem #1 to install it. 
+
+The next step is to _fork_ this repository by clicking on the "Fork" button on
+the GitHub page of this assignment. This will create a mirror of the homework
+repository under your own GitHub account. You can then _clone_ this repository
+using the following command:
+
+``` sh
+git clone https://github.com/your-user-name/Physics-427-homework-0.git
+```
+
+You will now have a directory called `Physics-427-homework-0` on your computer.
+It will only contain one file, `README.md`, which contains the instructions you
+are reading now. In the following sections we will be creating more files, which
+will be included in the submission.
+
+## 2. Setting Up C++ and Compile a Simple Program
+
+Now let us set up a C++ compiler on your computer. We will be using the GNU
 Compiler Collection (GCC), which includes a C++ compiler called `g++`.
 Follow the instructions depending on your operating system:
 
@@ -80,18 +100,25 @@ g++ hello_world.cpp && ./a.out
 The default output of `g++` is an executable binary file called
 `a.out`, and we call that executable using `./a.out`.
 
-## 2. Setup Git
+In order to include this file into the homework submission, run the following command:
 
-Homework submission in this course will be done through GitHub. You'll need to
-make sure `git` is installed on your system. Use the package installation method
-in Problem #1 to install it. 
-
-The next step is to _fork_ this repository. This will create a mirror of the
-homework repository under your own GitHub account. You can then _clone_ this
-repository using the following command:
 ``` sh
-git clone https://github.com/your-user-name/Physics-427-homework-0.git
+git add hello_world.cpp
 ```
 
+It will add this file to the so-called "staging area" for `git`. This is the
+area that are going to be tracked by the `git` version control system. You can
+now proceed to "commit" the file by writing:
 
-## Setup a Code Editor
+``` sh
+git commit -m "Added hello_world.cpp"
+```
+
+Committing means making a permanent change to the repository that is recorded by
+`git`. `git` works by keeping track of a history of commits. Each commit has its
+own hash number, and you will have the ability to look at individual commits or
+revert to an older commit. The part after `-m` is called the commit message,
+which goes into the commit log to indicate what you did for this particular
+commit.
+
+## 3. 
