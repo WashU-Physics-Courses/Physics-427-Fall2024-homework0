@@ -76,13 +76,14 @@ You can "clone" this repository onto your own computer, and add your content to
 it. This will be your version of the homework and will be how it is submitted too. 
 
 ``` sh
-git clone Link-to-your-homework-repository
+git clone https://github.com/[your_user_name]/[your_assignment_repository]/
 ```
 
-You will now have a directory starting with `Physics-427-homework-0` on your
-computer. It will only contain one file, `README.md`, which has the instructions
-you are reading now. In the following sections we will be creating more files,
-which will be included in the submission.
+`[your_assignment_repository]` will look like something similar to
+`phys-427-homework-0-[your_user_name]`. You will now have a directory with this
+name on your computer. It will only contain one file, `README.md`, which has the
+instructions you are reading now. In the following sections we will be creating
+more files, and submit them as the actual assignment.
 
 ## 2. Setting Up C++ and Compile a Simple Program
 
@@ -92,8 +93,9 @@ Follow the instructions depending on your operating system:
 
 ### Compiling a Hello World Program
 
-First, check that you have installed the compiler correctly by running the
-following command in your terminal (in the case of Windows, enter WSL first):
+First, install `gcc` using the package manager we discussed above. You can check
+that you have installed the compiler correctly by running the following command
+in your terminal (in the case of Windows, enter WSL first):
 
 ``` sh
 g++ --version
