@@ -109,7 +109,7 @@ git push origin main
 
 This will upload all your commits to GitHub, under the repository that you forked in Problem #1. You should now be able to see this new file on the repository webpage (of your fork, not the original assignment webpage). You can upload to the repository as many times as you want up until the deadline cutoff time. The system will freeze the repository automatically at the deadline, and you will not be able to update it afterwards. 
 
-In future assignments, the $git add/commit/push$ cycle will be the main way to submit your work. At any point, you can run `git status` to check what files are untracked (they need to be added to the repository in order to be submitted), what files are updated (you also need to add the change before committing), what files are staged for commit (the files that have already been added), and how many commits you are ahead of (or behind) the upstream repository.
+In future assignments, the `git add/commit/push` cycle will be the main way to submit your work. At any point, you can run `git status` to check what files are untracked (they need to be added to the repository in order to be submitted), what files are updated (you also need to add the change before committing), what files are staged for commit (the files that have already been added), and how many commits you are ahead of (or behind) the upstream repository.
 
 In general, do not add or commit compiled binary files like `a.out` to the git repository. You can filter them out so that git ignores them by writing a `.gitignore` file in the root of the repository (same level as `README.md`). An example `.gitignore` file (note `.` is part of the file name that tells Linux that it's a hidden file) is as follows:
 
