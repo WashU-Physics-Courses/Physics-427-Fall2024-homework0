@@ -4,7 +4,7 @@ __Due 9:00am Friday 9/1/2023__
 
 This homework is not graded and is designed to help you set up your computer environment and understand the homework submission process. It has an unusual deadline of Friday 9/1 since you will need to go through this set up process before the first real homework is due.
 
-## 0. Setting Up a Developing Environment
+## 1. Setting Up a Developing Environment
 
 We want to set up a Linux development environment on your computer. This will be important since most of the tools we use live in the command line, and they are part of a software ecosystem. The instructions will depend on your operating system:
 
@@ -41,19 +41,36 @@ brew install git
 
 If you use Linux, I expect that you know how to manage software packages on your computer. Make sure you install GCC using your package manager. If you use Ubuntu, then the instruction is the same as WSL outlined above.
 
-## 1. Setup Git
+## 2. Setup Git
 
-Homework submission in this course will be done through GitHub. You'll need to make sure `git` is installed on your system, which was done in the previous problem.
+After installing `git`, the first thing you should do is set up your user name and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating. You only need to do this once for a given computer:
 
-You can "clone" this repository onto your own computer, and add your content to it. This will be your version of the homework and will be how it is submitted too. 
+``` sh
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Homework submission in this course will be done through GitHub. You need to register for a free GitHub account. It is beneficial to set up an SSH key on GitHub to avoid typing your username and password everytime. To do this, install `openssh-cline` (if you use WSL or Debian-based Linux distributions like Ubuntu) or `openssh` (if you use homebrew on Mac, or use Arch/SUSE based Linux distributions) using the package manager above. Then in the terminal, run:
+
+``` sh
+ssh-keygen
+```
+and accept all default options by just hitting "Enter". You will create an `rsa` key under `~/.ssh/` where `~` is your home directory (the default directory when you enter terminal). You need the content of `~/.ssh/id_rsa.pub`, which you can see by the following command:
+
+``` sh
+cat ~/.ssh/id_rsa.pub
+```
+You should see several lines of gibberish, starting with "ssh-rsa" and ending with your machine name. In your GitHub account settings, under "SSH and GPG Keys", you can create a "New SSH key" and copy the whole output of the above command (including "ssh-rsa" and your machine name) into the "Key" text box. Now you should be able to do the following without needing to type your GitHub username and password.
+
+You need to "clone" this repository onto your own computer, and add your content to it. This will be your version of the homework and will be how it is submitted too. 
 
 ``` sh
 git clone https://github.com/[your_user_name]/[your_assignment_repository]/
 ```
 
-`[your_assignment_repository]` will look like something similar to `phys-427-homework-0-[your_user_name]`. You will now have a directory with this name on your computer. It will only contain one file, `README.md`, which has the instructions you are reading now. In the following sections we will be creating more files, and submit them as the actual assignment.
+`[your_assignment_repository]` will look like something similar to `phys-427-homework-0-[your_user_name]`. If you have not set up an SSH key, you will be asked to enter your GitHub username and password. You will now have a directory with this name on your computer. It will only contain one file, `README.md`, which has the instructions you are reading now. In the following sections we will be creating more files, and submit them as the actual assignment.
 
-## 2. Setting Up C++ and Compile a Simple Program
+## 3. Setting Up C++ and Compile a Simple Program
 
 Now let us set up a C++ compiler on your computer. We will be using the GNU Compiler Collection (GCC), which includes a C++ compiler called `g++`. Follow the instructions depending on your operating system:
 
@@ -83,7 +100,15 @@ Now compile and run the code using the following command:
 ``` sh
 g++ hello_world.cpp && ./a.out
 ```
-The default output of `g++` is an executable binary file called `a.out`, and we call that executable using `./a.out`.
+
+The first part of the command compiles the code and creates a binary executable file called `a.out`. The second part after `&&` runs the `a.out` program under the current directory. You should see "Hello World" printed on a new line in terminal.
+
+`a.out` is the default executable output file from `g++`. You can change the name of the output file using the `-o` option. For example:
+
+``` sh
+g++ -o hello_world hello_world.cpp && ./hello_world
+```
+
 
 ### Commit to git
 
