@@ -39,7 +39,7 @@ brew install git
 
 ### Linux
 
-If you use Linux, I expect that you know how to manage software packages on your computer. Make sure you install GCC using your package manager. If you use Ubuntu, then the instruction is the same as WSL outlined above.
+If you use Linux as your everyday OS, I expect that you know how to manage software packages on your computer. Make sure you install GCC using your package manager. If you use Ubuntu, then the instruction is the same as WSL outlined above.
 
 ## 2. Setup Git
 
@@ -50,7 +50,7 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-Homework submission in this course will be done through GitHub. You need to register for a free GitHub account. It is beneficial to set up an SSH key on GitHub to avoid typing your username and password everytime. To do this, install `openssh-cline` (if you use WSL or Debian-based Linux distributions like Ubuntu) or `openssh` (if you use homebrew on Mac, or use Arch/SUSE based Linux distributions) using the package manager above. Then in the terminal, run:
+Homework submission in this course will be done through GitHub. You need to register for a free GitHub account. It is beneficial to set up an SSH key on GitHub to avoid typing your username and password everytime. To do this, install `openssh-client` (if you use WSL or Debian-based Linux distributions like Ubuntu) or `openssh` (if you use homebrew on Mac, or use Arch/SUSE based Linux distributions) using the package manager above. Then in the terminal, run:
 
 ``` sh
 ssh-keygen
@@ -72,7 +72,7 @@ git clone https://github.com/[your_user_name]/[your_assignment_repository]/
 
 ## 3. Setting Up C++ and Compile a Simple Program
 
-Now let us set up a C++ compiler on your computer. We will be using the GNU Compiler Collection (GCC), which includes a C++ compiler called `g++`. Follow the instructions depending on your operating system:
+Now let us set up a C++ compiler on your computer. We will be using the GNU Compiler Collection (GCC), which includes a C++ compiler called `g++`. 
 
 ### Compiling a Hello World Program
 
@@ -82,7 +82,7 @@ First, install `gcc` using the package manager we discussed above. You can check
 g++ --version
 ```
 
-If the command prints something like `g++ (GCC) 12.2.1` or some other versions, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
+If the command prints something like `g++ (GCC) 12.2.1` or some other version, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
 
 Write the following snippet into a text file and save it as `hello_world.cpp`:
 
