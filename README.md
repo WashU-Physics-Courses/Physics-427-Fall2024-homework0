@@ -1,6 +1,6 @@
 # Physics 427 Homework 0
 
-__Due 9:00am Friday 9/1/2023__
+__Due 11:59pm Thursday 8/29/2024__
 
 This homework is not graded and is designed to help you set up your computer environment and understand the homework submission process. It has an unusual deadline of Friday 9/1 to force you go through this set up process before the first real homework is due.
 
@@ -23,6 +23,12 @@ To install a software package, use `apt-get install`. For example, we will use `
 apt-get install git
 ```
 
+Install `g++` using the following command:
+
+```sh
+apt-get install g++
+```
+
 ### Mac OS
 
 You can install GCC using `homebrew`. First, install `homebrew` using the following command:
@@ -35,6 +41,12 @@ You can install GCC using `homebrew`. First, install `homebrew` using the follow
 
 ``` sh
 brew install git
+```
+
+Install `gcc` (which includes `g++`) using the following command:
+
+```sh
+brew install gcc
 ```
 
 ### Linux
@@ -82,7 +94,7 @@ First, install `gcc` using the package manager we discussed above. You can check
 g++ --version
 ```
 
-If the command prints something like `g++ (GCC) 12.2.1` or some other version, then you are ready to go. If not, go back to previous steps and figure out what you did wrong.
+If the command prints something like `g++ (GCC) 12.2.1` or some other version, then you are ready to go. If not, go back to previous steps and figure out what you did wrong. __Note__: For MacOS, it comes with a special version of `g++` out of the box, so if you just call `g++` it will default to that version. To use the version you installed using `brew`, you need to call `g++-14` or `g++-13` depending on which version `brew` installed for you.
 
 Write the following snippet into a text file and save it as `hello_world.cpp`:
 
@@ -95,7 +107,7 @@ int main() {
 ```
 In general, `std::cout` is the most common way to write output to the terminal. You can write multiple different things in a line as long as they are separated by the operator `<<`. `std::endl` will end the output line and start a new line (and flush the output buffer).
 
-Now compile and run the code using the following command:
+Now compile and run the code using the following command (again, use `g++-14` or `g++-13` if you are on Mac):
 
 ``` sh
 g++ hello_world.cpp && ./a.out
@@ -110,7 +122,7 @@ g++ -o hello_world hello_world.cpp && ./hello_world
 ```
 
 
-### Commit to git
+## 4. Working with git
 
 In order to include this file into the homework submission, run the following command:
 
@@ -144,3 +156,5 @@ a.out
 *.so
 *.a
 ```
+
+GitHub is a website that hosts `git` repositories and provides a variety of services related to these repositories. If you want to learn more about GitHub, you can take the optional "Intro to Git and GitHub" mini-course here: https://classroom.github.com/a/lM4if9io.
