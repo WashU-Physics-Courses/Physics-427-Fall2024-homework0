@@ -2,7 +2,7 @@
 
 __Due 11:59pm Thursday 8/29/2024__
 
-This homework is not graded and is designed to help you set up your computer environment and understand the homework submission process. It has an unusual deadline of Friday 9/1 to force you go through this set up process before the first real homework is due.
+This homework is not graded and is designed to help you set up your computer environment and understand the homework submission process. It has an unusual deadline of Thursday 8/29 to force you go throuYgh this set up process before the first real homework is due.
 
 ## 1. Setting Up a Developing Environment
 
@@ -60,6 +60,10 @@ After installing `git`, the first thing you should do is set up your user name a
 ``` sh
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+```
+You may also want to run the following command, which sets the following default pull strategy. Otherwise `git` will ask you to set it the first time you need to do a merge when pulling.
+``` sh
+git config --global pull.rebase false
 ```
 
 Homework submission in this course will be done through GitHub. You need to register for a free GitHub account. It is beneficial to set up an SSH key on GitHub to avoid typing your username and password everytime. To do this, install `openssh-client` (if you use WSL or Debian-based Linux distributions like Ubuntu) or `openssh` (if you use homebrew on Mac, or use Arch/SUSE based Linux distributions) using the package manager above. Then in the terminal, run:
