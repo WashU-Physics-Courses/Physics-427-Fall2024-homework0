@@ -84,7 +84,7 @@ You need to "clone" this repository onto your own computer, and add your content
 git clone git@github.com:WashU-Physics-Courses/[your_assignment_repository]/
 ```
 
-`[your_assignment_repository]` will look like something similar to `phys-427-homework-0-[your_user_name]`. Setting up an SSH key is required, since GitHub has disabled the username and password login option. You will now have a directory with this name on your computer. It will only contain one file, `README.md`, which has the instructions you are reading now. In the following sections we will be creating more files, and submit them as the actual assignment.
+`[your_assignment_repository]` will look like something similar to `physics-427-fall-2024-homework-0-[your_user_name]`. Setting up an SSH key is required, since GitHub has disabled the username and password login option. You will now have a directory with this name on your computer. It will only contain one file, `README.md`, which has the instructions you are reading now. In the following sections we will be creating more files, and submit them as the actual assignment.
 
 ## 3. Setting Up C++ and Compile a Simple Program
 
